@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.turpana.com"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>T.M. Design and Development - WordPress</title>
+ <link>http://www.turpana.com/taxonomy/term/8</link>
+ <description>
+&quot;WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.&quot;
+
+</description>
+ <language>en</language>
+<item>
+ <title>Perfect Score Tutoring</title>
+ <link>http://www.turpana.com/perfectscore</link>
+ <description>&lt;div class=&quot;field field-name-field-scr-img field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; src=&quot;http://www.turpana.com/sites/default/files/styles/large/public/perfectscore.jpg?itok=hU9Q-swQ&quot; width=&quot;480&quot; height=&quot;360&quot; alt=&quot;Perfect Score Tutoring Screenshot&quot; title=&quot;Perfect Score Tutoring&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-technology field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Built with: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/taxonomy/term/8&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-service field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Services provided: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/taxonomy/term/5&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;CMS integration&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-1&quot;&gt;&lt;a href=&quot;/taxonomy/term/2&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Graphic design&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;blockquote&gt;&lt;p&gt;&quot;Perfect Score Tutoring, a recognized SES provider under the &quot;No Child Left Behind&quot; law for seven years, has helped NYC students of all grade levels succeed by building confidence.&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-project-url field-type-link-field field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Visit site:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;http://www.perfectscoretutoring.com&quot;&gt;perfectscoretutoring.com&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Sun, 13 Feb 2011 03:34:07 +0000</pubDate>
+ <dc:creator>turpana</dc:creator>
+ <guid isPermaLink="false">3 at http://www.turpana.com</guid>
+</item>
+</channel>
+</rss>

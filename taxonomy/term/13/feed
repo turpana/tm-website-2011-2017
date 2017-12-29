@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.turpana.com"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>T.M. Design and Development - drupal</title>
+ <link>http://www.turpana.com/taxonomy/term/13</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Styling Different Pages of Drupal Webforms</title>
+ <link>http://www.turpana.com/node/21</link>
+ <description>&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Tags: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/taxonomy/term/13&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;drupal&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-1&quot;&gt;&lt;a href=&quot;/taxonomy/term/20&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;7.x&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-2&quot;&gt;&lt;a href=&quot;/taxonomy/term/21&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;webform&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Styling drupal webforms can be pretty tricky, since there are many ways to customize. If you&#039;re not already familiar with &lt;a href=&quot;https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_form_alter/7&quot; target=&quot;_blank&quot;&gt;hook_form_alter&lt;/a&gt; and her sister function &lt;a href=&quot;https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_form_BASE_FORM_ID_alter/7&quot; target=&quot;_blank&quot;&gt;hook_form_BASE_FORM_ID_alter&lt;/a&gt;, then I highly recommend reading up on them. They are indispensable for all things involving forms in drupal. &lt;/p&gt;
+&lt;p&gt;If you are looking to style each page of a webform differently, a good start is identifying the different pages of the form with css class selectors. However, if you want to add a page number class to the webform, using the usual drupal hooks can be tricky. The form alter hooks run both before one page is validated and before the next page is built. This makes it tricky to know which page will be rendered ultimately and which class to add.&lt;/p&gt;
+&lt;p&gt;Don&#039;t worry! Drupal also has the handy &#039;#after_build&#039; form element attribute. The attribute allows you to call another function which will run only once, after the form has been &#039;built&#039;. The following module code worked for me, but remember to substitute in your module&#039;s name and your form&#039;s id:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&lt;br /&gt;
+function MODULENAME_form_webform_FORM_ID_alter(&amp;amp;$form, &amp;amp;$form_state)&lt;br /&gt;
+{&lt;br /&gt;
+ $form[&#039;#after_build&#039;][] = &#039;_add_page_num_class&#039;;&lt;br /&gt;
+}&lt;br /&gt;
+function _add_page_num_class($form_element)&lt;br /&gt;
+{&lt;br /&gt;
+ if (isset($form_element[&#039;details&#039;][&#039;page_num&#039;][&#039;#value&#039;])) {&lt;br /&gt;
+  $form_element[&#039;#attributes&#039;][&#039;class&#039;][] =&lt;br /&gt;
+  &#039;page-num-&#039; . $form_element[&#039;details&#039;][&#039;page_num&#039;][&#039;#value&#039;];&lt;br /&gt;
+ }&lt;br /&gt;
+ return $form_element;&lt;br /&gt;
+}&lt;br /&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 20 Jan 2014 20:14:27 +0000</pubDate>
+ <dc:creator>turpana</dc:creator>
+ <guid isPermaLink="false">21 at http://www.turpana.com</guid>
+</item>
+<item>
+ <title>Let&#039;s Talk About GIT!</title>
+ <link>http://www.turpana.com/node/20</link>
+ <description>&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Tags: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/taxonomy/term/12&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;dbug&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-1&quot;&gt;&lt;a href=&quot;/taxonomy/term/13&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;drupal&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-2&quot;&gt;&lt;a href=&quot;/taxonomy/term/14&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;meetup&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-3&quot;&gt;&lt;a href=&quot;/taxonomy/term/15&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;presentation&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-4&quot;&gt;&lt;a href=&quot;/taxonomy/term/16&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;downloads&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-5&quot;&gt;&lt;a href=&quot;/taxonomy/term/17&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;git&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Here are the slides from the GIT presentation at Tuesday&amp;#039;s DBUG meetup.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-downloads field-type-file field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Downloads:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;file&quot;&gt;&lt;img class=&quot;file-icon&quot; alt=&quot;PDF icon&quot; title=&quot;application/pdf&quot; src=&quot;/modules/file/icons/application-pdf.png&quot; /&gt; &lt;a href=&quot;http://www.turpana.com/sites/default/files/blogfiles/lets-talk-about-git.pdf&quot; type=&quot;application/pdf; length=1866334&quot;&gt;lets-talk-about-git.pdf&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 26 Jun 2013 15:03:04 +0000</pubDate>
+ <dc:creator>turpana</dc:creator>
+ <guid isPermaLink="false">20 at http://www.turpana.com</guid>
+</item>
+<item>
+ <title>Adding a View to an Automated Newsletter</title>
+ <link>http://www.turpana.com/node/15</link>
+ <description>&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Tags: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/taxonomy/term/13&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;drupal&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-1&quot;&gt;&lt;a href=&quot;/taxonomy/term/18&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;views&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-2&quot;&gt;&lt;a href=&quot;/taxonomy/term/19&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;6.x&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Drupal&#039;s &lt;a href=&quot;http://www.drupal.org/project/views&quot;&gt;Views&lt;/a&gt; module makes it simple to pull together and display lists of content. The &lt;a href=&quot;http://www.drupal.org/project/simplenews&quot;&gt;Simplenews&lt;/a&gt; allows site owners to send emails to lists of newsletter subscribers. But displaying the views in the newsletter is not that easy ... or is it?&lt;/p&gt;
+&lt;h2&gt;Adding a View to template file&lt;/h2&gt;
+&lt;p&gt;Here&#039;s an easy way to display a view in the template file :&lt;br /&gt;&lt;code&gt;&lt;br /&gt;
+$view = views_get_view(&#039;my_newsletter_weekly&#039;);&lt;br /&gt;
+$view-&amp;gt;set_display(&#039;default&#039;);&lt;br /&gt;
+print $view-&amp;gt;preview();&lt;br /&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Views Attach?&lt;/h2&gt;
+&lt;p&gt;Tried using Views attach module, but did not seeing any options after installing and:&lt;br /&gt;
+- Adding new Attach display to a view&lt;br /&gt;
+- Editing content type, Manage Fields, &amp;amp; Display Fields&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 02 Dec 2011 18:44:21 +0000</pubDate>
+ <dc:creator>turpana</dc:creator>
+ <guid isPermaLink="false">15 at http://www.turpana.com</guid>
+</item>
+</channel>
+</rss>

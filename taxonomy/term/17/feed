@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.turpana.com"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>T.M. Design and Development - git</title>
+ <link>http://www.turpana.com/taxonomy/term/17</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Let&#039;s Talk About GIT!</title>
+ <link>http://www.turpana.com/node/20</link>
+ <description>&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Tags: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/taxonomy/term/12&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;dbug&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-1&quot;&gt;&lt;a href=&quot;/taxonomy/term/13&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;drupal&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-2&quot;&gt;&lt;a href=&quot;/taxonomy/term/14&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;meetup&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-3&quot;&gt;&lt;a href=&quot;/taxonomy/term/15&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;presentation&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-4&quot;&gt;&lt;a href=&quot;/taxonomy/term/16&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;downloads&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-5&quot;&gt;&lt;a href=&quot;/taxonomy/term/17&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;git&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Here are the slides from the GIT presentation at Tuesday&amp;#039;s DBUG meetup.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-downloads field-type-file field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Downloads:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;file&quot;&gt;&lt;img class=&quot;file-icon&quot; alt=&quot;PDF icon&quot; title=&quot;application/pdf&quot; src=&quot;/modules/file/icons/application-pdf.png&quot; /&gt; &lt;a href=&quot;http://www.turpana.com/sites/default/files/blogfiles/lets-talk-about-git.pdf&quot; type=&quot;application/pdf; length=1866334&quot;&gt;lets-talk-about-git.pdf&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 26 Jun 2013 15:03:04 +0000</pubDate>
+ <dc:creator>turpana</dc:creator>
+ <guid isPermaLink="false">20 at http://www.turpana.com</guid>
+</item>
+</channel>
+</rss>

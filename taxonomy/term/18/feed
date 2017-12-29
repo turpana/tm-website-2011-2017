@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.turpana.com"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>T.M. Design and Development - views</title>
+ <link>http://www.turpana.com/taxonomy/term/18</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Adding a View to an Automated Newsletter</title>
+ <link>http://www.turpana.com/node/15</link>
+ <description>&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix&quot;&gt;&lt;h3 class=&quot;field-label&quot;&gt;Tags: &lt;/h3&gt;&lt;ul class=&quot;links&quot;&gt;&lt;li class=&quot;taxonomy-term-reference-0&quot;&gt;&lt;a href=&quot;/taxonomy/term/13&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;drupal&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-1&quot;&gt;&lt;a href=&quot;/taxonomy/term/18&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;views&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;taxonomy-term-reference-2&quot;&gt;&lt;a href=&quot;/taxonomy/term/19&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;6.x&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Drupal&#039;s &lt;a href=&quot;http://www.drupal.org/project/views&quot;&gt;Views&lt;/a&gt; module makes it simple to pull together and display lists of content. The &lt;a href=&quot;http://www.drupal.org/project/simplenews&quot;&gt;Simplenews&lt;/a&gt; allows site owners to send emails to lists of newsletter subscribers. But displaying the views in the newsletter is not that easy ... or is it?&lt;/p&gt;
+&lt;h2&gt;Adding a View to template file&lt;/h2&gt;
+&lt;p&gt;Here&#039;s an easy way to display a view in the template file :&lt;br /&gt;&lt;code&gt;&lt;br /&gt;
+$view = views_get_view(&#039;my_newsletter_weekly&#039;);&lt;br /&gt;
+$view-&amp;gt;set_display(&#039;default&#039;);&lt;br /&gt;
+print $view-&amp;gt;preview();&lt;br /&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Views Attach?&lt;/h2&gt;
+&lt;p&gt;Tried using Views attach module, but did not seeing any options after installing and:&lt;br /&gt;
+- Adding new Attach display to a view&lt;br /&gt;
+- Editing content type, Manage Fields, &amp;amp; Display Fields&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Fri, 02 Dec 2011 18:44:21 +0000</pubDate>
+ <dc:creator>turpana</dc:creator>
+ <guid isPermaLink="false">15 at http://www.turpana.com</guid>
+</item>
+</channel>
+</rss>
